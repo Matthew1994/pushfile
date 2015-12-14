@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>四六级人品测试</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+		}
+
+		body,html {
+			height: 100%;
+		}
+
+		input {
+			width:100%;
+			height:100%;
+			border-radius: 6px;
+			-webkit-border-radius:6px;
+    		-moz-border-radius:6px;
+			position: absolute;
+
+			text-align: center;
+			font-size: 1em;
+
+			transition: all 0.30s ease-in-out;
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			border: black 0px solid;
+			outline: none;
+		}
+
+		input:focus {
+			border:#35a5e5 1px solid;
+			box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		}
+
+		#input-box {
+			width:56%;
+			height:6%;
+			position: absolute;
+			margin-left: 22%;
+			bottom: 28%;
+		}
+		#main {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-size: 100% 100%;
+			background-image: url({{static_url("image/rp_index.jpg")}});
+		}
+		
+		#query {
+			position: absolute;
+			width: 36%;
+			height: 5.4%;
+			background-color: rgba(255,255,0,0);
+			margin-left: 32%;
+			bottom:17.4%;
+			border-radius: 6px;
+			-webkit-border-radius:6px;
+    		-moz-border-radius:6px;
+
+    		transition: all 0.30s ease-in-out;
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			border: black 0px solid;
+			outline: none;
+		}
+
+		#query:hover {
+			border:#FFFF55 1px solid;
+			box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		}
+
+		/* WebKit browsers */
+		input::-webkit-input-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+		/* Mozilla Firefox 4 to 18 */
+		input:-moz-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+		/* Mozilla Firefox 19+ */
+		input::-moz-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+
+		}
+		/* Internet Explorer 10+ */
+		input:-ms-input-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+
+	</style>
+	 <!--wechat js sdk-->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="{{static_url('js/wechat.js')}}"></script>
+	<script type="text/javascript">
+		server_data = {
+            wx_config: {
+                timestamp: {{jsonData["timestamp"]}}, // 必填，生成签名的时间戳
+                nonceStr: '{{jsonData["nonceStr"]}}', // 必填，生成签名的随机串
+                url: '{{jsonData["url"]}}',
+                jsapi_ticket: '{{jsonData["jsapi_ticket"]}}',
+                signature: '{{jsonData["signature"]}}'
+            }
+        };
+		window.onload = function() {
+			var bt = document.getElementById("query");
+			bt.ontouchstart = function() {
+				var word = document.getElementById("inputWord").value;
+				var re = /^[a-zA-Z]+$/;
+				if (!re.test(word))
+					console.log("invalid word!");
+				else
+					window.location.href = "http://192.168.199.124:8000/QueryWord/"+word;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id = "main">
+		<div id="input-box">
+			<input type="text" placeholder="输入你想到的英文单词" id="inputWord"></input>
+		</div>
+		<div>
+			<button id="query"></button>
+		</div>
+	</div>
+</body>
+</html>
