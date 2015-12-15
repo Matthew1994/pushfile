@@ -11,8 +11,13 @@
 			border: 0px;
 		}
 
-		body,html {
+		body, html {
 			height: 100%;
+		}
+
+		#globle {
+			position: absolute;
+			width: 100%;
 		}
 
 		input {
@@ -109,6 +114,25 @@
 			opacity: 0.3;
 		}
 
+		#explanation {
+			position: absolute;
+			width: 54%;
+			padding: 3%;
+			padding-top: 1%;
+			height: 19%;
+			margin-left: 20%;
+			top:35%;
+			background-color: white;
+			opacity: 0.7;
+			display: none;
+			border-radius: 10px;
+		}
+
+		#header {
+			color:rgb(100,100,255);
+			font-size: 1.5em;
+		}
+
 	</style>
 	 <!--wechat js sdk-->
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -121,25 +145,94 @@
  
         };
 		window.onload = function() {
+			var globle = document.getElementById("globle");
+			globle.style.height = ""+document.body.clientHeight+"px";
+
 			var bt = document.getElementById("query");
+			var input = document.getElementById("inputWord");
 			bt.ontouchstart = function() {
-				var word = document.getElementById("inputWord").value;
+				var word = input.value;
+				
+				var explanation = document.getElementById("explanation");
+				explanation.style.display = "block";
+
 				var re = /^[a-zA-Z]+$/;
-				if (!re.test(word))
-					console.log("invalid word!");
-				else
-					window.location.href = "http://192.168.199.124:8888/QueryWord/"+word;
+				if (!re.test(word)) {
+					explanation.childNodes[1].innerHTML = "请输入正确的单词!";
+					explanation.childNodes[3].innerHTML = "";
+				}
+				else {
+					var xhr = new XMLHttpRequest();
+					var url = "/GetWordInfo/"+word;
+					xhr.open("get", url, true);
+					xhr.onreadystatechange = function(){
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							var resObj = eval("("+xhr.responseText+")");
+							if (resObj["msg"] == "SUCCESS") {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = resObj["data"]["definition"];
+								window.location.href = "http://192.168.199.124:8888/QueryWord/"+word;
+							}
+							else {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = "不存在这个单词!";
+							}
+
+						}
+					};
+					xhr.send(null);
+				}
 			}
+
+			input.oninput = function() {
+				var word = input.value;
+				
+				var explanation = document.getElementById("explanation");
+				explanation.style.display = "block";
+
+				var re = /^[a-zA-Z]+$/;
+				if (!re.test(word)) {
+					explanation.childNodes[1].innerHTML = "请输入正确的单词!";
+					explanation.childNodes[3].innerHTML = "";
+				}
+				else {
+					var xhr = new XMLHttpRequest();
+					var url = "/GetWordInfo/"+word;
+					xhr.open("get", url, true);
+					xhr.onreadystatechange = function(){
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							var resObj = eval("("+xhr.responseText+")");
+							if (resObj["msg"] == "SUCCESS") {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = resObj["data"]["definition"];
+							}
+							else {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = "不存在这个单词!";
+							}
+
+						}
+					};
+					xhr.send(null);
+				}
+			}
+
 		}
 	</script>
 </head>
 <body>
-	<div id = "main">
-		<div id="input-box">
-			<input type="text" placeholder="输入你想到的英文单词" id="inputWord"></input>
-		</div>
-		<div>
-			<button id="query"></button>
+	<div id="globle">
+		<div id = "main">
+			<div id="input-box">
+				<input type="text" placeholder="输入你想到的英文单词" id="inputWord"></input>
+			</div>
+			<div id="explanation">
+				<p id="header"></p>
+				<p></p>
+			</div>
+			<div>
+				<button id="query"></button>
+			</div>
 		</div>
 	</div>
 </body>

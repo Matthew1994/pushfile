@@ -4,6 +4,7 @@ import tornado.web
 import tornado.wsgi
 import tornado.ioloop
 import os
+import urllib2
 from tornado.concurrent import Future
 from tornado import gen
 from tornado.options import define, options, parse_command_line
@@ -20,7 +21,7 @@ class QueryHandler(tornado.web.RequestHandler):
 			   "t":"2121", "u":"100000+", "v":"365", "w":"-0.00001",
 			   "x":"0", "y":"4", "z":"2333"}
 		word = word.lower()
-		self.render('result.html', char=word[0], value=dic[word[0]]);
+		self.render('result.html', char=word[0], value=dic.get(word[0]));
 
 class RPIndexHandler(tornado.web.RequestHandler):
 	def get(self):
@@ -36,6 +37,11 @@ class RPIndexHandler(tornado.web.RequestHandler):
 			url = url[0:len(url)-1]
 		print url
 		self.render('RPIndex.html');
+
+class GetWordInfoHandler(tornado.web.RequestHandler):
+	def get(self, word):
+		res = urllib2.urlopen('https://api.shanbay.com/bdc/search/?word='+word)
+		self.write(res.read())
 
 """
 #对于python3的tornado3.1要用下面写法
@@ -59,7 +65,8 @@ if __name__ == "__main__":
     parse_command_line()
     app = tornado.web.Application(
     	[(r'/QueryWord/([a-zA-Z]+)',QueryHandler),
-		 (r'/RPTest',RPIndexHandler),],
+		 (r'/RPTest',RPIndexHandler),
+		 (r'/GetWordInfo/([a-zA-Z]+)', GetWordInfoHandler),],
 		template_path=os.path.join(os.path.dirname(__file__), "templates"),
     	static_path=os.path.join(os.path.dirname(__file__), "static"),
     )
