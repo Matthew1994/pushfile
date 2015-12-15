@@ -52,7 +52,9 @@
 			height: 100%;
 			position: absolute;
 			background-size: 100% 100%;
-			background-image: url({{static_url("image/rp_index.jpg")}});
+			
+			/* new change */
+			background-image: url({{static_url("image/test_bg.jpg")}});
 		}
 		
 		#query {
@@ -71,6 +73,11 @@
 			-moz-transition: all 0.30s ease-in-out;
 			border: black 0px solid;
 			outline: none;
+
+			/* new addition */
+			background-size: 100% 100%;
+			background-image: url({{static_url("image/icon_start.png")}});
+
 		}
 
 		#query:hover {
@@ -106,16 +113,12 @@
 	 <!--wechat js sdk-->
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- 
     <script type="text/javascript" src="{{static_url('js/wechat.js')}}"></script>
+     -->
 	<script type="text/javascript">
 		server_data = {
-            wx_config: {
-                timestamp: {{jsonData["timestamp"]}}, // 必填，生成签名的时间戳
-                nonceStr: '{{jsonData["nonceStr"]}}', // 必填，生成签名的随机串
-                url: '{{jsonData["url"]}}',
-                jsapi_ticket: '{{jsonData["jsapi_ticket"]}}',
-                signature: '{{jsonData["signature"]}}'
-            }
+ 
         };
 		window.onload = function() {
 			var bt = document.getElementById("query");
@@ -125,7 +128,7 @@
 				if (!re.test(word))
 					console.log("invalid word!");
 				else
-					window.location.href = "http://192.168.199.124:8000/QueryWord/"+word;
+					window.location.href = "http://192.168.199.124:8888/QueryWord/"+word;
 			}
 		}
 	</script>
