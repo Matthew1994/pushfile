@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Characteristics_of_Capability_Maturity_Model.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective59" />
+    <linearGradient
+       id="linearGradient3783">
+      <stop
+         style="stop-color:#2f2d31;stop-opacity:1;"
+         offset="0"
+         id="stop3785" />
+      <stop
+         style="stop-color:#cac9cd;stop-opacity:1;"
+         offset="1"
+         id="stop3787" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3783"
+       id="linearGradient3839"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-385,-305.00006)"
+       x1="445"
+       y1="1237.3622"
+       x2="500"
+       y2="1172.3622" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0608672"
+     inkscape:cx="413.67838"
+     inkscape:cy="292.79113"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1005"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2888" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-452.36218)">
+    <rect
+       style="font-size:32px;text-align:center;text-anchor:middle;opacity:0.98000003999999996;fill:#e56852;fill-opacity:1;stroke:#000000;stroke-width:1.08912527999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       id="rect2886"
+       width="160"
+       height="80.000015"
+       x="20"
+       y="932.36218" />
+    <rect
+       style="font-size:32px;text-align:center;text-anchor:middle;opacity:0.98000003999999996;fill:#ef882b;fill-opacity:1;stroke:#000000;stroke-width:1.08912527999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       id="rect2886-8"
+       width="160"
+       height="80.000015"
+       x="120"
+       y="832.36218" />
+    <rect
+       style="font-size:32px;text-align:center;text-anchor:middle;opacity:0.98000003999999996;fill:#f1ed81;fill-opacity:1;stroke:#000000;stroke-width:1.08912527999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       id="rect2886-3"
+       width="160"
+       height="80.000015"
+       x="220"
+       y="732.36218" />
+    <rect
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;opacity:0.98000004;fill:#e5fabf;fill-opacity:1;stroke:#000000;stroke-width:1.2771126;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Arial;-inkscape-font-specification:Arial"
+       id="rect2886-0"
+       width="230.36888"
+       height="80.000015"
+       x="321.17212"
+       y="634.24744" />
+    <rect
+       style="font-size:32px;text-align:center;text-anchor:middle;opacity:0.98000003999999996;fill:#1ad639;fill-opacity:1;stroke:#000000;stroke-width:1.08912527999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       id="rect2886-30"
+       width="160"
+       height="80.000015"
+       x="420"
+       y="532.36218" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="99.914062"
+       y="963.67468"
+       id="text3713"><tspan
+         sodipodi:role="line"
+         id="tspan3715"
+         x="99.914062"
+         y="963.67468"
+         style="font-size:20">Level 1</tspan><tspan
+         sodipodi:role="line"
+         x="99.914062"
+         y="1003.6747"
+         id="tspan3717"
+         style="font-weight:bold;-inkscape-font-specification:AlArabiya Bold">Initial</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="199.88281"
+       y="860.495"
+       id="text3719"><tspan
+         sodipodi:role="line"
+         id="tspan3721"
+         x="199.88281"
+         y="860.495"
+         style="font-size:20">Level 2</tspan><tspan
+         sodipodi:role="line"
+         x="199.88281"
+         y="900.495"
+         id="tspan3723"
+         style="font-weight:bold;-inkscape-font-specification:AlArabiya Bold">Managed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
+       x="299.88281"
+       y="764.29187"
+       id="text3725"><tspan
+         sodipodi:role="line"
+         id="tspan3727"
+         x="299.88281"
+         y="764.29187"
+         style="font-size:20">Level 3</tspan><tspan
+         sodipodi:role="line"
+         x="299.88281"
+         y="804.29187"
+         id="tspan3729"
+         style="font-weight:bold;-inkscape-font-specification:AlArabiya Bold">Defined</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30.62502861px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="455.88129"
+       y="640.85132"
+       id="text3731"
+       transform="scale(0.95703213,1.044897)"><tspan
+         sodipodi:role="line"
+         id="tspan3733"
+         x="455.88129"
+         y="640.85132"
+         style="font-size:19.14064407px">Level 4</tspan><tspan
+         sodipodi:role="line"
+         x="455.88129"
+         y="666.37646"
+         id="tspan3735"
+         style="font-size:21.05470657px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial Bold">Quantitatively Managed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
+       x="500.48535"
+       y="563.59985"
+       id="text3737"><tspan
+         sodipodi:role="line"
+         id="tspan3739"
+         x="500.48535"
+         y="563.59985"
+         style="font-size:20">Level 5</tspan><tspan
+         sodipodi:role="line"
+         x="500.48535"
+         y="599.61285"
+         id="tspan3741"
+         style="font-size:28px;-inkscape-font-specification:Arial Bold;font-family:Arial;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">Optimizing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:37.18137741000000318px;font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;fill:#3731c2;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:AlArabiya Bold;font-stretch:normal;font-variant:normal"
+       x="430.19589"
+       y="471.88965"
+       id="text3743"
+       transform="scale(0.92953441,1.0758074)"><tspan
+         sodipodi:role="line"
+         x="430.19589"
+         y="471.88965"
+         id="tspan3755">Characteristics of the Maturity levels</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
+       x="550.42145"
+       y="64.454803"
+       id="text3747"
+       transform="translate(0,452.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan3751" /></text>
+    <path
+       style="fill:url(#linearGradient3839);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       d="m 60,932.36218 0,-70 40,0 0,-10 20,20 -20,20 0,-10 -20,0 0,50 -20,0 z"
+       id="path3757"
+       sodipodi:nodetypes="cccccccccc" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path3757"
+       id="use3791"
+       transform="translate(100,-100)"
+       width="800"
+       height="600"
+       style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path3757"
+       id="use3793"
+       transform="translate(200,-200)"
+       width="800"
+       height="600"
+       style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path3757"
+       id="use3795"
+       transform="translate(300,-300)"
+       width="800"
+       height="600"
+       style="-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" />
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
+       x="589.39032"
+       y="564.34314"
+       id="text3797"><tspan
+         sodipodi:role="line"
+         id="tspan3799"
+         x="589.39032"
+         y="564.34314">Focus on process</tspan><tspan
+         sodipodi:role="line"
+         x="589.39032"
+         y="591.84314"
+         id="tspan3801">improvement</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="560"
+       y="666.81384"
+       id="text3803"><tspan
+         sodipodi:role="line"
+         id="tspan3805"
+         x="560"
+         y="666.81384">Processes measured</tspan><tspan
+         sodipodi:role="line"
+         x="560"
+         y="694.31384"
+         id="tspan3807">and controlled</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="392"
+       y="744.54578"
+       id="text3809"><tspan
+         sodipodi:role="line"
+         id="tspan3811"
+         x="392"
+         y="744.54578">Processes characterized for the </tspan><tspan
+         sodipodi:role="line"
+         x="392"
+         y="772.04578"
+         id="tspan3813">organization and is proactive.</tspan><tspan
+         sodipodi:role="line"
+         x="392"
+         y="794.53235"
+         id="tspan3829"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">(Projects tailor their processes from</tspan><tspan
+         sodipodi:role="line"
+         x="392"
+         y="814.53235"
+         id="tspan3815"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">organization's standards)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="290"
+       y="864.49158"
+       id="text3817"><tspan
+         sodipodi:role="line"
+         id="tspan3819"
+         x="290"
+         y="864.49158">Processes characterized for projects</tspan><tspan
+         sodipodi:role="line"
+         x="290"
+         y="891.99158"
+         id="tspan3845">and is often reactive.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="192.93173"
+       y="964.17126"
+       id="text3821"><tspan
+         sodipodi:role="line"
+         id="tspan3823"
+         x="192.93173"
+         y="964.17126">Processes unpredictable, </tspan><tspan
+         sodipodi:role="line"
+         x="192.93173"
+         y="991.67126"
+         id="tspan3847">poorly controlled and reactive</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal"
+       x="719.13153"
+       y="312.97476"
+       id="text3825"
+       transform="translate(0,452.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan3827" /></text>
+  </g>
+</svg>
